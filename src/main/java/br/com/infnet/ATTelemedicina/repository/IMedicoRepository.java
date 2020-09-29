@@ -15,5 +15,5 @@ import br.com.infnet.ATTelemedicina.negocio.Medico;
 @Repository
 public interface IMedicoRepository extends CrudRepository<Medico, Integer> {
 
-	List<Medico> findAll(Sort by);
+	//List<Medico> findAll(Sort by);
 }

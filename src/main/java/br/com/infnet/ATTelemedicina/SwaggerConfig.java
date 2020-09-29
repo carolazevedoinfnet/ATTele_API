@@ -45,7 +45,7 @@ public class SwaggerConfig {
 		
 	}
 	
-	@SuppressWarnings("serial")
+	//@SuppressWarnings("serial")
 	private List<ResponseMessage> responseMessages(){
 		return new ArrayList<ResponseMessage>() {{
 			add(new ResponseMessageBuilder()

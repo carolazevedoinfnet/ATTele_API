@@ -14,6 +14,6 @@ import br.com.infnet.ATTelemedicina.negocio.Consulta;
 @Repository
 public interface IConsultaRepository extends CrudRepository<Consulta, Integer>{
 
-	List<Consulta> findAll(Sort by);
+//	List<Consulta> findAll(Sort by);
 
 }

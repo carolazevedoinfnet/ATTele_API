@@ -9,7 +9,6 @@ import br.com.infnet.ATTelemedicina.negocio.Usuario;
 import br.com.infnet.ATTelemedicina.repository.IusuarioRepository;
 
 @Service 
-
 public class UsuarioService {
 	
 	@Autowired

@@ -15,6 +15,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -36,13 +37,14 @@ public class Consulta {
 	@Column(columnDefinition = "TIME")
 	private LocalTime hora;
 	
-	@ManyToMany(cascade = CascadeType.DETACH)
+	@OneToMany(cascade = CascadeType.DETACH)
 	@JoinTable(name ="TConsultaExames",
 		joinColumns = {@JoinColumn(name="idConsulta")},
 		inverseJoinColumns = {@JoinColumn(name="idExame")})	
 	
 	private List<Exame> exames;
 	
+	//@ManyToMany
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
 	@JoinColumn(name = "idMedico")
 	private Medico medico;

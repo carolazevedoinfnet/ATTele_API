@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import br.com.infnet.ATTelemedicina.negocio.Medico;
 import br.com.infnet.ATTelemedicina.service.MedicoService;
 import io.swagger.annotations.ApiOperation;
 
-@Controller
+@RestController
+@RequestMapping("/api/telemedicina/medico")
 public class MedicoController {
 
 	@Autowired

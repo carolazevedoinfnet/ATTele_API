@@ -24,7 +24,7 @@ import br.com.infnet.ATTelemedicina.negocio.Exame;
 import br.com.infnet.ATTelemedicina.negocio.Paciente;
 
 @RestController
-@RequestMapping("/api/telemedicina")
+@RequestMapping("/api/telemedicina/paciente")
 public class PacienteController {
 
 	@Autowired
@@ -46,7 +46,8 @@ public class PacienteController {
 	}
 
 	@ApiOperation(value = "Cadastrar paciente")
-	@PostMapping(value = "/paciente")
+	@PostMapping
+	//@PostMapping(value = "/paciente")
 	public void incluir(@RequestBody Paciente paciente) {
 		pacienteService.incluir(paciente);
 

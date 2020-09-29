@@ -32,14 +32,15 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/api/telemedicina")
+@RequestMapping("/api/telemedicina/consulta")
 public class ConsultaController {
 
 	@Autowired
 	private ConsultaService consultaService;
 
 	@ApiOperation(value = "Retornar lista de consultas")
-	@GetMapping(value = "/consulta/listaConsulta")
+	@GetMapping
+	//@GetMapping(value = "/consulta/listaConsulta")
 	public List<Consulta> obterLista() { // obterListaConsulta
 		return consultaService.obterLista();
 	}

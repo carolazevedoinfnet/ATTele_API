@@ -11,7 +11,8 @@ import br.com.infnet.ATTelemedicina.negocio.Consulta;
 import br.com.infnet.ATTelemedicina.repository.IConsultaRepository;
 
 
-@Service public class ConsultaService {
+@Service 
+public class ConsultaService {
 
 	@Autowired private IConsultaRepository consultaRepository;
 

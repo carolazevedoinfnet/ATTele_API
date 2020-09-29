@@ -23,7 +23,7 @@ import br.com.infnet.ATTelemedicina.service.ExameService;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/api/telemedicina")
+@RequestMapping("/api/telemedicina/exame")
 public class ExameController {
 
 	@Autowired
