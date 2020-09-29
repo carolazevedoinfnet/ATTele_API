@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModelProperty;
 
 @Entity
@@ -25,6 +27,7 @@ public class Exame {
 	private String descricao;
 	 
 	@ManyToMany(mappedBy = "exames", cascade = CascadeType.DETACH)
+	@JsonIgnore
 	private List<Consulta> consultas;
 
 	public Exame() {		
