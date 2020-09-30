@@ -22,7 +22,7 @@ public class Medico {
 	private String email;
 	private boolean clinico;
 	private boolean especialista;
-	private String[] especialidades;
+	/* private String[] especialidades; */
 	
 
 
@@ -30,13 +30,13 @@ public class Medico {
 	public Medico() {
 	}
 
-	public Medico(Integer id, String nome, String email, boolean clinico, boolean especialista, String[] especialidade) {
+	public Medico(Integer id, String nome, String email, boolean clinico, boolean especialista /*String[] especialidades*/) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.clinico = clinico;
 		this.especialista = especialista;
-		this.especialidades = especialidade;
+		/* this.especialidades = especialidades; */
 		
 
 	}
@@ -95,25 +95,23 @@ public class Medico {
 		this.especialista = especialista;
 	}
 
-	public String getEspecialidade() {
-		if (especialidades ==null)
-			return "" ;
-		
-		String especi = "";
-		
-		for (String spec : especialidades) {
-			if(especi.equals(""))	
-				especi = spec;
-			else 
-				especi = especi + ", " + spec;		
-		}
-		
-		return especi;
-	}
-
-	public void setEspecialidade(String[] especialidade) {
-		this.especialidades = especialidade;
-	}
+	/*
+	 * public String getEspecialidades1() { if (especialidades ==null) return "" ;
+	 * 
+	 * String especi = "";
+	 * 
+	 * for (String spec : especialidades) { if(especi.equals("")) especi = spec;
+	 * else especi = especi + ", " + spec; }
+	 * 
+	 * return especi; }
+	 * 
+	 * public String[] getEspecialidades() { return especialidades; }
+	 * 
+	 * public void setEspecialidades(String[] especialidades) { this.especialidades
+	 * = especialidades; }
+	 * 
+	 * 
+	 */
 
 
 

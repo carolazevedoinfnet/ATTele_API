@@ -47,7 +47,7 @@ public class ConsultaController {
 
 
 	@ApiOperation(value = "Cadastrar consulta")
-	@PostMapping(value = "/consulta") // /incluir
+	@PostMapping(value = "/consulta/incluir") //
 	public void incluir(@RequestBody Consulta consulta) {
 		consultaService.incluir(consulta);
 	}
